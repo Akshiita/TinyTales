@@ -1,13 +1,70 @@
-React, PapaParse, file-saver, and Chart.js are among the essential packages and libraries that are imported by this programme.
+# Getting Started with Create React App
 
-It describes a useful React component called App that will actually render the application.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The useState hook is used by the component to define the states data, csvData, and canvasRef. The chart data will be kept in the data state as an object with labels and dataset characteristics. The data that will be exported in CSV format will be stored in the csvData state. The HTML canvas element where the chart will be displayed will be referenced using the canvasRef state, which is established using the useRef hook.
+## Available Scripts
 
-The component includes a function called fetchData that will use the fetch API to retrieve the text file from the URL. The function divides the text into words, counts each word's frequency, sorts the words by frequency in decreasing order, chooses the top 20 most common words, and stores the data as an array of objects with the properties word and count. The function then stores the data in the data state after converting it to a format that is suitable for charts. The function also changes the data's format to CSV and puts it in the csvData state.
+In the project directory, you can run:
 
-The component defines a function called handleExport that is triggered when the user clicks the export button. This function uses the PapaParse library to convert the csvData to his CSV format and uses the saveAs function from the file saver library to save the file.
+### `npm start`
 
-The component defines a useEffect hook that fires when the data changes state. The hook initializes a new Chart.js chart object and renders it to the HTML canvas element referenced by CanvasRef.
- 
-The component renders a button with a click event listener that triggers the fetchData function when clicked. If the data state is not null, the component renders a canvas element and a button with a Click event listener that triggers the handleExport function when clicked.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
